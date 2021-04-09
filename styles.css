@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+  background-image: url(./img/maua.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: 18%;
+  background-position-y: 20%;
+}
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(./img/Gg&Bertha.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    clip-path: circle(0px at center);
+}
+.container {
+    position: relative;
+    margin-top: 200vh;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+.container h2 {
+    font-size: 5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.container h4 {
+  font-size: 2.2em;
+  margin-top: 10px;
+}
+.container h3 {
+  font-size: 1.8em;
+}
+.container #left {
+  float:left; 
+  width:40%;
+  height:350px;
+  background-color: #fff;
+  padding-left: 50px;
+  line-height: 30px;
+  padding-bottom: 150px;
+
+}
+.container #right {
+  float:right; 
+  width:60%;
+  height:350px;
+  background-color: #fff;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+.icon {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+.icon path {
+  fill: transparent;
+  stroke-width: 10;
+  stroke: red;
+}
+.icon.heart path {
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+.icon.heart path {
+  animation: animate-heart 2s ease-in-out infinite;
+}
+@keyframes animate-heart {
+  0% {
+      stroke-dashoffset: 0;
+  }
+  50% {
+      stroke-dashoffset: 1560;
+      fill: transparent;
+  }
+  100% {
+      stroke-dashoffset: 3120;
+      fill: transparent;
+  }
+}
+.title {
+    position: relative;
+    top: 250px;
+    z-index: 1;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+}
+.big-text {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%, -45%);
+    font-size: 7rem;
+    font-family: "Lobster", cursive;
+    color: rgb(61, 61, 61);
+  }
+.big-text span {
+    color: red;
+    font-size: 10rem;
+    font-family: "Lobster", cursive;
+}
+.medium-text {
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+    padding-top: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+  }
+.medium-text sup {
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+}
+  .intro {
+    background: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider {
+    background: rgb(97, 105, 109);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  
+  .intro-text {
+    color: rgb(233, 233, 233);
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .hide {
+    background: black;
+    padding: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+  
+.down-arrow {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.arrow {
+text-align: center;
+margin: -95% 0;
+}
+.bounce {
+-moz-animation: bounce 2s infinite;
+-webkit-animation: bounce 2s infinite;
+animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+}
+40% {
+    transform: translateY(-30px);
+}
+60% {
+    transform: translateY(-15px);
+}
+}
